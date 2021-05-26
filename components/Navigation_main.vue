@@ -15,8 +15,3 @@
       </nav>
    </div>
 </template>
-<style scoped>
-nav {
-   float: left;
-}
-</style>

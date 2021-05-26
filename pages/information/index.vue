@@ -2,7 +2,7 @@
   <div>
       <NavigationMain></NavigationMain>
       <div>
-        <h3>Main 화면입니다.</h3>
+        <h3>Information 메인 화면입니다.</h3>
       </div>
   </div>
 </template>

@@ -1,18 +1,22 @@
 <template>
-   <div>
+   <div class="container">
       <nav>
-         <ul>
+         <ul class="nav-main">
             <li>
                <Nuxt-link to="/">Main</Nuxt-link>
             </li>
             <li>
-               <Nuxt-link to="/">Board</Nuxt-link>
+               <Nuxt-link to="/board">Board</Nuxt-link>
             </li>
             <li>
-               <Nuxt-link to="/">Information</Nuxt-link>
+               <Nuxt-link to="/information">Information</Nuxt-link>
             </li>
          </ul>
       </nav>
-      <hr/>
    </div>
 </template>
+<style scoped>
+nav {
+   float: left;
+}
+</style>

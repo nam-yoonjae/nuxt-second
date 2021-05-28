@@ -17,9 +17,22 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title : this.title,
+      meta : [
+        {
+          name : 'description',
+          content : 'my custom content',
+        }
+      ],
+    }
+  },
   data() {
     return {
       list : [],
+
+      title : `Cheeeez's Website`,
     }
   },
   computed : {

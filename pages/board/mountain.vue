@@ -4,9 +4,7 @@
         <h3>Nuxt Mountains 예제</h3>
         <Nuxt-link to="/board/">게시판 첫 화면으로</Nuxt-link>
         <div>
-          <p v-if="$fetchState.pending">Fetching mountains...</p>
-          <p v-else-if="$fetchState.error">An error occured :(</p>
-          <div v-else>
+          <div v-if="!$fetchState.pending">
             <ul>
               <li class="mountain-list" v-for="(item, index) in list" :key="index">
                 <h3>이름 : {{item.title}}</h3>
@@ -18,6 +16,9 @@
               </li>
             </ul>
             <button @click="$fetch">Refresh</button>
+          </div>
+          <div>
+            
           </div>
         </div>
       </div>

@@ -1,15 +1,12 @@
 <template>
   <div>
-      <NavigationMain></NavigationMain>
       <div>
-        <h3>Board 목록 화면입니다.</h3>
+        <h3>Nuxt Mountains 예제</h3>
         <Nuxt-link to="/board/">게시판 첫 화면으로</Nuxt-link>
         <div>
-          <h2>nuxt.js mountains Json 데이터 예제</h2>
           <p v-if="$fetchState.pending">Fetching mountains...</p>
           <p v-else-if="$fetchState.error">An error occured :(</p>
           <div v-else>
-            <h3>Nuxt mountains</h3>
             <ul>
               <li class="mountain-list" v-for="(item, index) in list" :key="index">
                 <h3>이름 : {{item.title}}</h3>

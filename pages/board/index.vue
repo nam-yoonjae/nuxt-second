@@ -1,16 +1,19 @@
 <template>
   <div>
-      <NavigationMain></NavigationMain>
       <div>
         <h3>Board 메인 화면입니다.</h3>
-        <Nuxt-link to="/board/board_list">게시판으로</Nuxt-link>
+        <div>
+          <Nuxt-link to="/board/mountain">Nuxt.js Mountains 목록</Nuxt-link>
+        </div>
+        <div>
+          <Nuxt-link to="/board/dynamic">Nuxt.js dynamicPages</Nuxt-link>
+        </div>
       </div>
   </div>
 </template>
 
 <script>
 export default {
-  layout : 'board',
 }
 </script>
 

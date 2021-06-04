@@ -4,6 +4,7 @@
         <h3>Nuxt Mountains 예제</h3>
         <Nuxt-link to="/board/">게시판 첫 화면으로</Nuxt-link>
         <div>
+          <button @click="$fetch">Refresh</button>
           <div v-if="!$fetchState.pending">
             <ul>
               <li class="mountain-list" v-for="(item, index) in list" :key="index">
@@ -15,11 +16,11 @@
                 <p>높이 : {{item.height}}</p>
               </li>
             </ul>
-            <button @click="$fetch">Refresh</button>
           </div>
-          <div>
-            
+          <div class="nowLoading" v-else>
+              로딩중입니다.
           </div>
+          
         </div>
       </div>
   </div>
@@ -55,5 +56,14 @@
 <style>
 .mountain-list {
   padding-top:1rem;
+}
+.nowLoading {
+
+    width: 100%;
+    height: 300px;
+    line-height: 300px;
+    background: antiquewhite;
+    text-align: center;
+    font-size: 3rem;
 }
 </style>

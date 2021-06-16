@@ -2,24 +2,15 @@
   <div>
       <div>
         <h3>Main 화면입니다.</h3>
-        <div v-if="$fetchState.pending">
-          로딩 중입니다.
-        </div>
-        <div v-else>
-          로딩 끝
-        </div>
         <div>
         {{$fetchState}}
           <h3>{{rendering}}</h3>
         </div>
-        <div v-if="list.length > 0">
-          <ul>
-            <li v-for="(item, index) in list" :key="index">
-              <span v-text="item.name"></span>
-              <span v-text="item.value"></span>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <div>
+        <h2>
+          다시 삭제했어요
+        </h2>
       </div>
   </div>
 </template>

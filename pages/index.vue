@@ -8,9 +8,7 @@
         </div>
       </div>
       <div>
-        <h2>
-          다시 삭제했어요
-        </h2>
+        커밋 메시지 길게 해보자
       </div>
   </div>
 </template>

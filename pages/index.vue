@@ -7,9 +7,6 @@
           <h3>{{rendering}}</h3>
         </div>
       </div>
-      <div>
-        커밋 메시지 길게 해보자
-      </div>
   </div>
 </template>
 

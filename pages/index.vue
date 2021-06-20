@@ -7,11 +7,6 @@
           <h3>{{rendering}}</h3>
         </div>
       </div>
-      <div>
-        <h2>
-          다시 삭제했어요
-        </h2>
-      </div>
   </div>
 </template>
 
